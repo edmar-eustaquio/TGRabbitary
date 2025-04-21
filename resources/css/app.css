@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+    --nav-height:50px;
+    --sidebar-width:250px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius: 100vw;
+    background: #5A5D5D;
+}
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: #A7ADAB;
+    border-radius: 100vw;
+}
+
+.show-fade{
+    animation: show-fade 700ms;
+}
+
+
+@keyframes slide-up{
+    from{
+        transform: translateY(50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes show-fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
